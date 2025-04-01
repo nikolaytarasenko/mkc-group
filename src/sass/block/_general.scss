@@ -40,7 +40,12 @@ h6 {
 
 a {
   text-decoration: none;
+  color: $color-orange;
   transition: 0.15s ease-out;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 p {
@@ -50,6 +55,39 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    line-height: 1;
+    border-radius: 7px;
+    transition: 0.15s ease-out;
+
+    &--primary {
+        color: $color-white;
+        background: $color-orange;
+
+        &:hover {
+            background: $color-orange-dark;
+            color: $color-white;
+        }
+    }
+
+    &--secondary {
+        background: transparent;
+        border: 3px solid $color-orange;
+        color: $color-orange;
+
+        &:hover {
+            color: $color-orange-dark;
+            border-color: $color-orange-dark;
+        }
+    }
 }
 
 .hide {

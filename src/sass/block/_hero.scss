@@ -1,3 +1,49 @@
 .hero {
-    
+    position: relative;
+    min-height: calc(100vh - 126px);
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+
+    &__inner {
+        padding-top: 82px;
+    }
+
+    &__content {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    &__title {
+        font-size: 102px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 24px;
+
+        span {
+            display: block;
+            margin-left: 92px;
+            font-size: 72px;
+            font-weight: 300;
+        }
+    }
+
+    &__description {
+        display: flex;
+        gap: 98px;
+        margin-bottom: 64px;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 24px;
+
+        .btn {
+            flex: 1;
+            max-width: 277px;
+        }
+    }
 }

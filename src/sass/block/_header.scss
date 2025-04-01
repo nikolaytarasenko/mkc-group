@@ -1,3 +1,126 @@
 .header {
-    
+    &__top {
+        background: $color-orange;
+        padding: 7px 0;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__social-link {
+        transition: 0.1s ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__contact-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $color-white;
+
+        &:hover {
+            color: $color-black;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        &--phone {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    &__nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        &-link {
+            padding: 16px 12px;
+            color: $color-black;
+            z-index: 2;
+
+            &:hover {
+                color: $color-orange;
+            }
+        }
+
+        &-item {
+            position: relative;
+            height: 56px;
+            display: flex;
+            align-items: center;
+
+            &.has-sub {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url('../img/triangle.svg') center/cover no-repeat;
+                    right: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 10px;
+                    transition: 0.15s ease-out;
+                    z-index: 1;
+                }
+            }
+
+            .header__nav-link {
+                padding-right: 28px;
+            }
+        }
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        background: transparent;
+        margin-left: 48px;
+        margin-right: 5px;
+        width: 56px;
+        height: 56px;
+        border-radius: 7px;
+
+        span {
+            display: block;
+            width: 23px;
+            height: 3px;
+            border-radius: 6px;
+            background: $color-orange;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
