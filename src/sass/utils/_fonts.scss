@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Sora';
+  src: local('Sora-Light'),
+    url('../font/Sora-Light.woff2') format('woff2'),
+    url('../font/Sora-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: local('Sora-Regular'),
+    url('../font/Sora-Regular.woff2') format('woff2'),
+    url('../font/Sora-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: local('Sora-SemiBold'),
+    url('../font/Sora-SemiBold.woff2') format('woff2'),
+    url('../font/Sora-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: local('Sora-Bold'),
+    url('../font/Sora-Bold.woff2') format('woff2'),
+    url('../font/Sora-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
